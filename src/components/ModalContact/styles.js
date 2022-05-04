@@ -20,7 +20,7 @@ export const Modal = styled.section`
   padding: 0px;
   width: 300px;
   height: 250px;
-  border-radius: 4px;
+  border-radius: 20px;
 
   > div {
     display: flex;
@@ -28,7 +28,7 @@ export const Modal = styled.section`
     justify-content: space-between;
     width: 100%;
     background-color: #393e46;
-    border-radius: 4px 4px 0 0;
+    border-radius: 17px 17px 0 0;
     flex-direction: column-reverse;
 
     > h2 {

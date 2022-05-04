@@ -10,7 +10,7 @@ const Modalcontact = ({ setModal }) => {
         <div>
           <h2>Contatos</h2>
           <IoCloseCircleOutline
-            size={"30px"}
+            size={"25px"}
             color={"#ffffff"}
             onClick={() => setModal(false)}
           />
