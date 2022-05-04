@@ -42,6 +42,10 @@ export const Modal = styled.section`
       position: relative;
       left: 134px;
       cursor: pointer;
+      transition: 0.8s;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 
@@ -64,6 +68,12 @@ export const Modal = styled.section`
       }
       a {
         color: #222831;
+        transition: 0.8s;
+        display: flex;
+        align-items: center;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }

@@ -25,24 +25,45 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
   }
+  @media screen and (min-width: 1440px) {
+    width: 900px;
+  }
 `;
 
-export const ContainerTechs = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: space-around;
-  width: 100%;
-  height: 190px;
-  > li {
-    background-color: #00adb5;
-    padding: 3px;
-    border-radius: 4px;
-    color: #393e46;
-    margin: 3px;
+export const ContainerTechs = styled.div`
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    width: 100%;
+    height: 190px;
+    > li {
+      background-color: #00adb5;
+      padding: 3px;
+      border-radius: 4px;
+      color: #393e46;
+      margin: 3px;
+    }
   }
   @media screen and (min-width: 1024px) {
-    width: 90%;
+    > ul {
+      width: 90%;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > ul {
+      width: 75%;
+    }
+    h3 {
+      width: 100%;
+    }
+    span {
+      width: 100%;
+    }
   }
 `;

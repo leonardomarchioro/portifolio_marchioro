@@ -9,6 +9,10 @@ export const Container = styled.header`
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 600;
+    transition: 0.8s;
+    &:hover {
+      transform: scale(1.25);
+    }
   }
 
   > button {
@@ -18,5 +22,9 @@ export const Container = styled.header`
     border: transparent;
     font-size: 16px;
     font-weight: 600;
+    transition: 0.8s;
+    &:hover {
+      transform: scale(1.25);
+    }
   }
 `;

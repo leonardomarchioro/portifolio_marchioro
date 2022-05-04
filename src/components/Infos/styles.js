@@ -16,6 +16,13 @@ export const Container = styled.div`
     justify-content: space-evenly;
     height: 50px;
   }
+  > .Infos > div svg {
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
   > .Img {
     display: none;
   }
@@ -31,5 +38,8 @@ export const Container = styled.div`
         width: 100%;
       }
     }
+  }
+  @media screen and (min-width: 1440px) {
+    width: 900px;
   }
 `;

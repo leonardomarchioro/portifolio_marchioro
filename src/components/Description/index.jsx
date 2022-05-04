@@ -12,9 +12,9 @@ const Description = () => {
         Kenzie Academy Brasil mas procuro sempre continuar me desenvolvendo na
         área.
       </p>
-      <div>
+      <ContainerTechs>
         <h3>Tecnologias</h3>
-        <ContainerTechs>
+        <ul>
           <li>HTML5</li>
           <li>CSS3</li>
           <li>JavaScript ES6+</li>
@@ -29,9 +29,9 @@ const Description = () => {
           <li>Express*</li>
           <li>PostgreSQL*</li>
           <li>Docker*</li>
-        </ContainerTechs>
+        </ul>
         <span>Aprendendo*</span>
-      </div>
+      </ContainerTechs>
     </Container>
   );
 };

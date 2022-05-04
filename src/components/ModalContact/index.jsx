@@ -18,17 +18,17 @@ const Modalcontact = ({ setModal }) => {
 
         <ul>
           <li>
-            <IoLogoWhatsapp size={"30px"} color={"#222831"} />
             <a href="https://wa.me/5547996797620?text=" target="_blanck">
+              <IoLogoWhatsapp size={"30px"} color={"#222831"} />
               Contate-me por WhatsApp
             </a>
           </li>
           <li>
-            <SiGmail size={"30px"} color={"#222831"} />
             <a
               href="https://mail.google.com/mail/u/0/?fs=1&to=leonardomarchioro11@gmail.com&tf=cm"
               target="_blanck"
             >
+              <SiGmail size={"30px"} color={"#222831"} />
               Contate-me por e-mail
             </a>
           </li>
