@@ -10,6 +10,7 @@ export const ContainerModal = styled.section`
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
+  z-index: 1;
 `;
 
 export const Modal = styled.section`
@@ -42,9 +43,13 @@ export const Modal = styled.section`
       position: relative;
       left: 134px;
       cursor: pointer;
+      color: #eeeeee;
       transition: 0.8s;
+      border-radius: 50%;
       &:hover {
         transform: scale(1.2);
+        color: #2c3333;
+        background-color: #eeeeee;
       }
     }
   }

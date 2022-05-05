@@ -5,13 +5,15 @@ export const Container = styled.div`
   flex-direction: column;
   background-color: #2c3333;
   width: 100%;
-  height: 100%;
+  height: auto;
 
   > header {
     margin: 20px;
   }
+
   @media screen and (min-width: 768px) {
     justify-content: space-between;
+    overflow: hidden;
   }
 `;
 

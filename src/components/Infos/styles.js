@@ -3,27 +3,28 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
 
-  > .Infos > h1 {
+  .Infos > h1 {
     font-family: "Rubik", sans-serif;
     font-size: 30px;
     color: #00adb5;
+    text-align: center;
   }
 
-  > .Infos > div {
+  .Infos > div {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 50px;
   }
-  > .Infos > div svg {
+  .Infos > div svg {
     transition: 0.5s;
     &:hover {
       transform: scale(1.2);
       cursor: pointer;
     }
   }
-  > .Img {
+  .Img {
     display: none;
   }
   @media screen and (min-width: 768px) {
@@ -32,7 +33,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    > .Img {
+    .Img {
       display: flex;
       img {
         width: 100%;

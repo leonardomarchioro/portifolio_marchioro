@@ -8,7 +8,14 @@ export const Container = styled.div`
   width: 100%;
   height: auto;
 
-  > header {
+  > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -17,6 +24,7 @@ export const Container = styled.div`
       margin: 5px;
       color: #eeeeee;
       transition: 0.8s;
+      cursor: pointer;
       border-radius: 50%;
       &:hover {
         transform: scale(1.2);
@@ -25,7 +33,7 @@ export const Container = styled.div`
       }
     }
   }
-  > h1 {
+  h1 {
     font-size: 30px;
     color: #00adb5;
   }

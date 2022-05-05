@@ -27,4 +27,7 @@ export const Container = styled.header`
       transform: scale(1.25);
     }
   }
+  @media screen and (min-width: 768px) {
+    margin: 35px;
+  }
 `;

@@ -1,23 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  > h1 {
+  h1 {
     color: #00adb5;
   }
-  > p {
+  p {
     margin-bottom: 10px;
     color: #eeeeee;
     line-height: 1.3;
   }
-  > div {
-    > h3 {
-      color: #00adb5;
-    }
-    > span {
-      font-size: 12px;
-      color: #00adb5;
-    }
-  }
+
   @media screen and (min-width: 768px) {
     width: 100%;
     height: 100%;
@@ -31,6 +23,13 @@ export const Container = styled.div`
 `;
 
 export const ContainerTechs = styled.div`
+  > h3 {
+    color: #00adb5;
+  }
+  > span {
+    font-size: 12px;
+    color: #00adb5;
+  }
   > ul {
     display: flex;
     flex-wrap: wrap;

@@ -4,6 +4,8 @@ import Header from "../../components/Header";
 import Infos from "../../components/Infos";
 import Description from "../../components/Description";
 
+import { motion } from "framer-motion";
+
 import { Container, Body } from "./style";
 
 const Home = () => {

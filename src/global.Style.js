@@ -16,6 +16,8 @@ export const GlobalStyle = createGlobalStyle`
     body{
         width: 100vw;
         height: 100vh;
+        background-color: #2c3333;
+
     }   
     #root{
         width: 100%;
@@ -33,4 +35,5 @@ export const GlobalStyle = createGlobalStyle`
     li {
         list-style: none;
     }
+
 `;
