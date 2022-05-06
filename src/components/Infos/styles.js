@@ -33,10 +33,16 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .Infos {
+      position: relative;
+      top: 50px;
+    }
     .Img {
       display: flex;
+      justify-content: center;
       img {
-        width: 100%;
+        width: 80%;
       }
     }
   }

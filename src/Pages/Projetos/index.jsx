@@ -14,6 +14,7 @@ const Projetos = () => {
       <header>
         <TiArrowBackOutline size={"30px"} onClick={() => history.push("/")} />
       </header>
+      <h1>Projetos</h1>
       <motion.div
         initial={{ x: 0, y: 0, scale: 0.5, rotate: 0 }}
         animate={{
@@ -24,7 +25,6 @@ const Projetos = () => {
         }}
         transition={{ duration: 1.8 }}
       >
-        <h1>Projetos</h1>
         <Body>
           {projects.map((project, index) => (
             <CardProjeto key={index} project={project} />

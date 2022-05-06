@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2c3333;
+  background-color: #181818;
   width: 100%;
   height: auto;
 
@@ -28,7 +28,7 @@ export const Container = styled.div`
       border-radius: 50%;
       &:hover {
         transform: scale(1.2);
-        color: #2c3333;
+        color: #181818;
         background-color: #eeeeee;
       }
     }

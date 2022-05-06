@@ -5,7 +5,7 @@ import {
   IoReader,
 } from "react-icons/io5";
 
-import gifCode from "../../assets/animation.gif";
+import gifCode from "../../assets/gifcode.gif";
 import { Container } from "./styles";
 import { motion } from "framer-motion";
 

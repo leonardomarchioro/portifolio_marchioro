@@ -35,7 +35,7 @@ export const Modal = styled.section`
     > svg {
       position: relative;
       left: 135px;
-      top: 2px;
+      top: -4px;
       color: #eeeeee;
       cursor: pointer;
       transition: 0.8s;

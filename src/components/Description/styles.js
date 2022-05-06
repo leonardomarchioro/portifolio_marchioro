@@ -33,9 +33,10 @@ export const ContainerTechs = styled.div`
   > ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     align-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 100%;
     height: 190px;
     > li {
