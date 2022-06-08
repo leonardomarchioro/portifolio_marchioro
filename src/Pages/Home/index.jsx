@@ -14,7 +14,7 @@ const Home = () => {
       {modal && <Modalcontact setModal={setModal} />}
 
       <Nav setModal={setModal} />
-      <Infos setModal={setModal} />
+      <Infos  />
       <Description />
       
     </Container>

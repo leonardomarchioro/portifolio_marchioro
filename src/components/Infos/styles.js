@@ -1,12 +1,18 @@
 import styled from "styled-components";
+import {
+  backgroundColor,
+  primaryColor,
+  secondaryColor,
+  disableColor,
+} from "../../global.Style";
 
 export const Container = styled.div`
   width: 100%;
 
   .Infos > h1 {
     font-family: "Rubik", sans-serif;
-    font-size: 30px;
-    color: #00adb5;
+    font-size: 22px;
+    color: ${primaryColor};
     text-align: center;
   }
 
@@ -33,6 +39,10 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .Infos > h1 {
+      font-size: 30px;
+    }
 
     .Infos {
       position: relative;

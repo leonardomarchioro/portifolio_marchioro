@@ -3,6 +3,28 @@ import { Container, ContainerTechs } from "./styles";
 import { motion } from "framer-motion";
 
 const Description = () => {
+  const techs = {
+    Frontend: [
+      "HTML5",
+      "CSS3",
+      "JavaScript ES6+",
+      "ReactJS",
+      "Styled-components",
+      "Redux",
+      "ContexAPI",
+    ],
+    Versionamento: ["Git", "GitHub"],
+    Backend: [
+      "NodeJS",
+      "TypeScript",
+      "Express",
+      "PostgreSQL",
+      "Docker",
+      "Prisma",
+    ],
+    Aprendendo: ["Python", "Django"],
+  };
+
   return (
     <Container>
       <motion.div
@@ -15,7 +37,7 @@ const Description = () => {
         }}
         transition={{ duration: 1.5 }}
       >
-        <h1>Desenvolvedor FrontEnd</h1>
+        <h2>Sobre</h2>
         <p>
           Olá eu sou o Leonardo, tenho 20 anos e comecei meu contato com
           tecnologia logo cedo na infância com jogos e depois com a internet
@@ -25,24 +47,31 @@ const Description = () => {
           desenvolvendo na área.
         </p>
         <ContainerTechs>
-          <h3>Tecnologias</h3>
+          <h2>Tecnologias</h2>
           <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript ES6+</li>
-            <li>ReactJS</li>
-            <li>Styled-components</li>
-            <li>Redux</li>
-            <li>ContexAPI</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>NodeJS*</li>
-            <li>TypeScript*</li>
-            <li>Express*</li>
-            <li>PostgreSQL*</li>
-            <li>Docker*</li>
+            <h3>Front-end: </h3>
+            {techs.Frontend.map((tech) => (
+              <li>{tech}</li>
+            ))}
           </ul>
-          <span>Aprendendo*</span>
+          <ul>
+            <h3>Back-end: </h3>
+            {techs.Backend.map((tech) => (
+              <li>{tech}</li>
+            ))}
+          </ul>
+          <ul>
+            <h3>Versionamento: </h3>
+            {techs.Versionamento.map((tech) => (
+              <li>{tech}</li>
+            ))}
+          </ul>
+          <ul>
+            <h3>Aprendendo: </h3>
+            {techs.Aprendendo.map((tech) => (
+              <li>{tech}</li>
+            ))}
+          </ul>
         </ContainerTechs>
       </motion.div>
     </Container>

@@ -1,12 +1,22 @@
 import styled from "styled-components";
+import {
+  backgroundColor,
+  primaryColor,
+  secondaryColor,
+  disableColor,
+} from "../../global.Style";
 
 export const Container = styled.div`
-  h1 {
-    color: #00adb5;
+  margin-top: 25px;
+
+  h2 {
+    font-size: 20px;
+    margin-left: 15px;
   }
   p {
-    margin-bottom: 10px;
-    color: #eeeeee;
+    margin: 10px 29px;
+    text-align: justify;
+    color: ${secondaryColor};
     line-height: 1.3;
   }
 
@@ -23,28 +33,37 @@ export const Container = styled.div`
 `;
 
 export const ContainerTechs = styled.div`
-  > h3 {
-    color: #00adb5;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  h3 {
+    font-size: 16px;
+    color: ${primaryColor};
   }
-  > span {
-    font-size: 12px;
-    color: #00adb5;
+
+  h2 {
+    margin: 15px;
   }
+
   > ul {
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
     width: 100%;
-    height: 190px;
+    height: auto;
+    margin-bottom: 10px;
     > li {
-      background-color: #00adb5;
       padding: 3px;
       border-radius: 4px;
-      color: #393e46;
+      background-color: ${disableColor};
+      color: ${secondaryColor};
       margin: 3px;
+      font-size: 12px;
     }
   }
   @media screen and (min-width: 1024px) {
