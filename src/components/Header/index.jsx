@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Container } from "./styles";
 
-const Header = ({ setModal }) => {
+const Nav = ({ setModal }) => {
   return (
     <Container>
       <Link to={"/projetos"}>Projetos</Link>
@@ -10,4 +10,4 @@ const Header = ({ setModal }) => {
   );
 };
 
-export default Header;
+export default Nav;

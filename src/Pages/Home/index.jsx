@@ -1,12 +1,10 @@
 import { useState } from "react";
 import Modalcontact from "../../components/ModalContact";
-import Header from "../../components/Header";
+import Nav from "../../components/Header";
 import Infos from "../../components/Infos";
 import Description from "../../components/Description";
 
-import { motion } from "framer-motion";
-
-import { Container, Body } from "./style";
+import { Container } from "./style";
 
 const Home = () => {
   const [modal, setModal] = useState(false);
@@ -15,11 +13,10 @@ const Home = () => {
     <Container>
       {modal && <Modalcontact setModal={setModal} />}
 
-      <Header setModal={setModal} />
-      <Body>
-        <Infos setModal={setModal} />
-        <Description />
-      </Body>
+      <Nav setModal={setModal} />
+      <Infos setModal={setModal} />
+      <Description />
+      
     </Container>
   );
 };

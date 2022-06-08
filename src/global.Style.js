@@ -16,24 +16,35 @@ export const GlobalStyle = createGlobalStyle`
     body{
         width: 100vw;
         height: 100vh;
-        background-color: #181818;
+        background-color: #1F0441;
 
     }   
     #root{
         width: 100%;
         height:100%;
     }
-    h1, h2, h3, h4, h5, h6{
+    h1, h2 {
         font-family: 'Rubik', sans-serif;
-        color: #037bbd;
+        color: #FC1068;
+        font-size: 25px;
+    }
+    
+    h3, h4, h5, h6{
+        font-family: 'Rubik', sans-serif;
+        color: #FFFFFF;
         font-size: 25px;
     }
     p, span, li{
         font-family: 'Rubik', sans-serif;
-        color: #95b3dc;
+        color: #FFFFFF;
     }
     li {
         list-style: none;
     }
 
 `;
+
+export const backgroundColor = "#1F0441"
+export const primaryColor = "#FC1068"
+export const secondaryColor = "#FFFFFF"
+export const disableColor = "#3F3D56"

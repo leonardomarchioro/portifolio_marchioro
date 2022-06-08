@@ -1,14 +1,16 @@
 import styled from "styled-components";
+import { backgroundColor, primaryColor } from "../../global.Style";
 
 export const Container = styled.header`
   display: flex;
   justify-content: space-around;
   padding-bottom: 10px;
-  border-bottom: 1.5px solid #00adb5;
   > a {
     padding: 8px;
-    background-color: #00adb5;
-    color: #181818;
+    width: 115px;
+    text-align:center;
+    background-color: ${primaryColor};
+    color: ${backgroundColor};
     border-radius: 7px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -21,8 +23,9 @@ export const Container = styled.header`
 
   > button {
     padding: 8px;
-    background-color: #00adb5;
-    color: #181818;
+    width: 115px;
+    background-color: ${primaryColor};
+    color: ${backgroundColor};
     border-radius: 7px;
     font-family: "Inter", sans-serif;
     border: transparent;

@@ -5,7 +5,6 @@ import {
   IoReader,
 } from "react-icons/io5";
 
-import gifCode from "../../assets/gifcode.gif";
 import { Container } from "./styles";
 import { motion } from "framer-motion";
 
@@ -50,7 +49,7 @@ const Infos = ({ setModal }) => {
           </div>
         </div>
         <div className="Img">
-          <img src={gifCode} alt="Gif Coding" />
+          {/* <img src={gifCode} alt="Gif Coding" /> */}
         </div>
       </motion.div>
     </Container>
