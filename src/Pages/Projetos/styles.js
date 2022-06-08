@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import {
+  backgroundColor,
+  primaryColor,
+  secondaryColor,
+} from "../../global.Style";
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #181818;
+  background-color: ${backgroundColor};
   width: 100%;
   height: auto;
 
@@ -22,23 +27,27 @@ export const Container = styled.div`
     margin-bottom: 20px;
     > svg {
       margin: 5px;
-      color: #eeeeee;
+      color: ${secondaryColor};
       transition: 0.8s;
       cursor: pointer;
       border-radius: 50%;
       &:hover {
         transform: scale(1.2);
-        color: #181818;
-        background-color: #eeeeee;
+        color: ${backgroundColor};
+        background-color: ${secondaryColor};
       }
     }
   }
   h1 {
     font-size: 30px;
-    color: #00adb5;
+    color: ${primaryColor};
   }
   @media screen and (min-width: 768px) {
     height: 100%;
+
+    h1 {
+      width: 80%;
+    }
   }
 `;
 

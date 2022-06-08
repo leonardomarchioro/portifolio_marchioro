@@ -14,7 +14,7 @@ const Projetos = () => {
       <header>
         <TiArrowBackOutline size={"30px"} onClick={() => history.push("/")} />
       </header>
-      <h1>Projetos</h1>
+      <h1>&lt; Projetos /&gt;</h1>
       <motion.div
         initial={{ x: 0, y: 0, scale: 0.5, rotate: 0 }}
         animate={{

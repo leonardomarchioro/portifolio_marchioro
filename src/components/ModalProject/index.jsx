@@ -3,11 +3,16 @@ import { ContainerModal, Modal } from "./styles";
 import { motion } from "framer-motion";
 
 import { IoCloseCircleOutline } from "react-icons/io5";
-import { GoLinkExternal } from "react-icons/go";
+
+import LinkWeb from "../../assets/link-da-web.png";
+import LinkGit from "../../assets/github (1).png";
 
 const ModalProject = ({ setModal, project }) => {
+  const closeModal = (event) => {
+    event.target.tagName === "SECTION" && setModal(false);
+  };
   return (
-    <ContainerModal>
+    <ContainerModal onClick={(e) => closeModal(e)}>
       <motion.div
         className="animation-desktop"
         initial={{ x: 0, y: 0, scale: 0.5, rotate: 0 }}
@@ -27,14 +32,19 @@ const ModalProject = ({ setModal, project }) => {
             />
             <h2>{project.name}</h2>
           </header>
-          <div>
-            <div className="Img">
-              <img src={project.img} alt={project.name} />
+          <div className="Infos">
+            <div className="Sobre">
+              <p>{project.sobre}</p>
+            </div>
+            <div className="Links">
               <a href={project.link} target="_blanck">
-                <GoLinkExternal size={"25px"} />
+                <img src={LinkWeb} alt="aplicação na web" />
+              </a>
+              <a href={project.repo} target="_blanck">
+                <img src={LinkGit} alt="repositório" />
               </a>
             </div>
-            <div className="Infos">
+            <div className="ListTechs">
               <h3>Tecnologias usadas</h3>
               <ul>
                 {project.techs.map((tech, index) => (

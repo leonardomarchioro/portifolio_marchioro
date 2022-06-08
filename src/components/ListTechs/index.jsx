@@ -20,6 +20,8 @@ const ListTechs = () => {
       "PostgreSQL",
       "Docker",
       "Prisma",
+      "TypeORM",
+      "Jest",
     ],
     Aprendendo: ["Python", "Django"],
   };

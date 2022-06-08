@@ -1,4 +1,10 @@
 import styled from "styled-components";
+import {
+  backgroundColor,
+  primaryColor,
+  secondaryColor,
+  disableColor,
+} from "../../global.Style";
 
 export const ContainerModal = styled.section`
   position: fixed;
@@ -18,13 +24,12 @@ export const Modal = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #00adb5;
+  background-color: ${backgroundColor};
   padding: 0px;
   width: 300px;
-  height: 400px;
+  height: auto;
   border-radius: 20px;
   > header {
-    background-color: #393e46;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -36,7 +41,7 @@ export const Modal = styled.section`
       position: relative;
       left: 135px;
       top: -4px;
-      color: #eeeeee;
+      color: ${secondaryColor};
       cursor: pointer;
       transition: 0.8s;
       &:hover {
@@ -47,11 +52,11 @@ export const Modal = styled.section`
     > h2 {
       position: relative;
       top: -12px;
-      color: #00adb5;
+      color: ${primaryColor};
       font-weight: 100;
     }
   }
-  > div {
+  .Infos {
     margin: 15px;
     height: 100%;
     display: flex;
@@ -60,48 +65,52 @@ export const Modal = styled.section`
     justify-content: flex-start;
   }
 
-  .Img {
-    width: 100%;
+  .Links {
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    > img {
-      width: 95%;
-      border-radius: 4px;
-    }
-    > a {
-      position: relative;
-      top: -25px;
-      left: 115px;
-      color: #00adb5;
+    justify-content: space-around;
+    a > img {
+      width: 35px;
       transition: 0.8s;
-
       &:hover {
-        transform: scale(1.25);
+        transform: scale(1.2);
       }
     }
   }
 
-  .Infos {
+  .Sobre {
+    height: auto;
+
+    margin-bottom: 15px;
+    p {
+      margin-bottom: 25px;
+      text-align: justify;
+    }
+  }
+
+  .ListTechs {
     width: 100%;
     padding: 10px;
     height: 100%;
 
     > h3 {
-      color: #393e46;
+      color: ${primaryColor};
       font-weight: 400;
-      font-size: 22px;
+      font-size: 18px;
+      margin-bottom: 5px;
     }
     ul {
       height: 100%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: flex-start;
+      flex-wrap: wrap;
+      align-content: flex-start;
       > li {
         margin: 3px;
         > span {
-          background-color: #393e46;
-          color: #eeeeee;
+          background-color: ${disableColor};
+          color: ${secondaryColor};
           padding: 3px;
           border-radius: 6px;
           font-size: 14px;

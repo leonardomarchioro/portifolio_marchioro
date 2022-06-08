@@ -52,19 +52,25 @@ const Modalcontact = ({ setModal }) => {
               </a>
             </li>
             <li>
-              <a href="https://wa.me/5547996797620?text=" target="_blanck">
+              <a
+                href="https://www.linkedin.com/in/leonardo-marchioro/"
+                target="_blanck"
+              >
                 <img src={ImgLinkedin} alt="LinkedInd" />
                 LinkedInd
               </a>
             </li>
             <li>
-              <a href="https://wa.me/5547996797620?text=" target="_blanck">
+              <a href="https://github.com/leonardomarchioro" target="_blanck">
                 <img src={ImgGitHub} alt="GitHub" />
                 GitHub
               </a>
             </li>
             <li>
-              <a href="https://wa.me/5547996797620?text=" target="_blanck">
+              <a
+                href="https://docs.google.com/document/d/1dQY83Ov6R0esQu-IniqmNhrBFRMqTWmK_EuLUor3npY/edit?usp=sharing"
+                target="_blanck"
+              >
                 <img src={ImgCurriculo} alt="Currículo" />
                 Currículo
               </a>
