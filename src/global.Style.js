@@ -41,10 +41,14 @@ export const GlobalStyle = createGlobalStyle`
     li {
         list-style: none;
     }
+    *::-webkit-scrollbar {
+  display: none;
+}
+
 
 `;
 
-export const backgroundColor = "#1F0441"
-export const primaryColor = "#FC1068"
-export const secondaryColor = "#FFFFFF"
-export const disableColor = "#3F3D56"
+export const backgroundColor = "#1F0441";
+export const primaryColor = "#FC1068";
+export const secondaryColor = "#FFFFFF";
+export const disableColor = "#3F3D56";

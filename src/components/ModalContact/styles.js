@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import {
+  backgroundColor,
+  primaryColor,
+  secondaryColor,
+} from "../../global.Style";
 
 export const ContainerModal = styled.section`
   position: fixed;
@@ -17,10 +22,10 @@ export const Modal = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #00adb5;
+  background-color: ${backgroundColor};
   padding: 0px;
   width: 300px;
-  height: 250px;
+  height: 460px;
   border-radius: 20px;
 
   > div {
@@ -28,12 +33,11 @@ export const Modal = styled.section`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #393e46;
     border-radius: 17px 17px 0 0;
     flex-direction: column-reverse;
 
     > h2 {
-      color: #eeeeee;
+      color: ${primaryColor};
       position: relative;
       top: -12px;
       font-size: 16px;
@@ -43,13 +47,13 @@ export const Modal = styled.section`
       position: relative;
       left: 134px;
       cursor: pointer;
-      color: #eeeeee;
+      color: ${secondaryColor};
       transition: 0.8s;
       border-radius: 50%;
       &:hover {
         transform: scale(1.2);
-        color: #2c3333;
-        background-color: #eeeeee;
+        color: ${backgroundColor};
+        background-color: ${secondaryColor};
       }
     }
   }
@@ -68,11 +72,12 @@ export const Modal = styled.section`
       justify-content: flex-start;
       align-items: center;
 
-      svg {
-        margin-right: 5px;
+      img {
+        margin-right: 15px;
+        width: 40px;
       }
       a {
-        color: #222831;
+        color: ${secondaryColor};
         transition: 0.8s;
         display: flex;
         align-items: center;

@@ -1,30 +1,8 @@
-import { Container, ContainerTechs } from "./styles";
+import { Container } from "./styles";
 
 import { motion } from "framer-motion";
 
 const Description = () => {
-  const techs = {
-    Frontend: [
-      "HTML5",
-      "CSS3",
-      "JavaScript ES6+",
-      "ReactJS",
-      "Styled-components",
-      "Redux",
-      "ContexAPI",
-    ],
-    Versionamento: ["Git", "GitHub"],
-    Backend: [
-      "NodeJS",
-      "TypeScript",
-      "Express",
-      "PostgreSQL",
-      "Docker",
-      "Prisma",
-    ],
-    Aprendendo: ["Python", "Django"],
-  };
-
   return (
     <Container>
       <motion.div
@@ -37,42 +15,19 @@ const Description = () => {
         }}
         transition={{ duration: 1.5 }}
       >
-        <h2>Sobre</h2>
+        <h2>Sobre mim</h2>
         <p>
-          Olá eu sou o Leonardo, tenho 20 anos e comecei meu contato com
-          tecnologia logo cedo na infância com jogos e depois com a internet
-          então sempre tive um contato com a área e um desejo de entrar mais
-          nesse mundo. Hoje sou um desenvolvedor frontend, atualmente estudo
-          backend na Kenzie Academy Brasil mas procuro sempre continuar me
-          desenvolvendo na área.
+          Olá me chamo Leonardo tenho 20 anos e meu contato com tecnologia
+          começou logo na infância com jogos e depois com a internet no querido
+          Orkut, sempre estive relacionado nesse mundo mas nunca havia entrado
+          de fato, mas isso mudou quando decidi fazer uma mudança de planos na
+          minha vida em 2020, comecei a estudar por conta própria mas ainda sem
+          um direção especifica e sem uma evolução constante, em setembro de
+          2021 entrei para Kenzie e mudou completamente minha rotina, finalmente
+          consegui achar uma direção e segui-la e finalmente estava vendo meu
+          avanço com o passar dos dias e me identifiquei ainda mais com a
+          programação.
         </p>
-        <ContainerTechs>
-          <h2>Tecnologias</h2>
-          <ul>
-            <h3>Front-end: </h3>
-            {techs.Frontend.map((tech) => (
-              <li>{tech}</li>
-            ))}
-          </ul>
-          <ul>
-            <h3>Back-end: </h3>
-            {techs.Backend.map((tech) => (
-              <li>{tech}</li>
-            ))}
-          </ul>
-          <ul>
-            <h3>Versionamento: </h3>
-            {techs.Versionamento.map((tech) => (
-              <li>{tech}</li>
-            ))}
-          </ul>
-          <ul>
-            <h3>Aprendendo: </h3>
-            {techs.Aprendendo.map((tech) => (
-              <li>{tech}</li>
-            ))}
-          </ul>
-        </ContainerTechs>
       </motion.div>
     </Container>
   );

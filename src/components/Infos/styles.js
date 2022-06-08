@@ -1,10 +1,5 @@
 import styled from "styled-components";
-import {
-  backgroundColor,
-  primaryColor,
-  secondaryColor,
-  disableColor,
-} from "../../global.Style";
+import { primaryColor } from "../../global.Style";
 
 export const Container = styled.div`
   width: 100%;
@@ -44,19 +39,30 @@ export const Container = styled.div`
       font-size: 30px;
     }
 
-    .Infos {
-      position: relative;
-      top: 50px;
-    }
     .Img {
       display: flex;
       justify-content: center;
       img {
-        width: 80%;
+        width: 60%;
       }
     }
   }
   @media screen and (min-width: 1440px) {
     width: 900px;
+
+    > div {
+      height: 100%;
+    }
+
+    .Infos {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .Img > img {
+        width: 80%;
+      }
+    }
   }
 `;

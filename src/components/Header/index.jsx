@@ -5,7 +5,7 @@ const Nav = ({ setModal }) => {
   return (
     <Container>
       <Link to={"/projetos"}>Projetos</Link>
-      <button onClick={() => setModal(true)}>Contato</button>
+      <button onClick={() => setModal(true)}>Contatos</button>
     </Container>
   );
 };

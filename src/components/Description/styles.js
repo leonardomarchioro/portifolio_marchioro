@@ -1,10 +1,5 @@
 import styled from "styled-components";
-import {
-  backgroundColor,
-  primaryColor,
-  secondaryColor,
-  disableColor,
-} from "../../global.Style";
+import { secondaryColor } from "../../global.Style";
 
 export const Container = styled.div`
   margin-top: 25px;
@@ -26,63 +21,22 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    h2 {
+      margin: 25px;
+    }
   }
   @media screen and (min-width: 1440px) {
     width: 900px;
-  }
-`;
-
-export const ContainerTechs = styled.div`
-  margin: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-  h3 {
-    font-size: 16px;
-    color: ${primaryColor};
-  }
-
-  h2 {
-    margin: 15px;
-  }
-
-  > ul {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    > li {
-      padding: 3px;
-      border-radius: 4px;
-      background-color: ${disableColor};
-      color: ${secondaryColor};
-      margin: 3px;
-      font-size: 12px;
+
+    h2 {
+      font-size: 28px;
     }
-  }
-  @media screen and (min-width: 1024px) {
-    > ul {
-      width: 90%;
-    }
-  }
-  @media screen and (min-width: 1440px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    > ul {
-      width: 75%;
-    }
-    h3 {
-      width: 100%;
-    }
-    span {
-      width: 100%;
+    p {
+      font-size: 20px;
+      line-height: 1.3;
     }
   }
 `;
