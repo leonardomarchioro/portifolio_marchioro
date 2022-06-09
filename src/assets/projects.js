@@ -12,9 +12,9 @@ export const projects = [
     link: "https://bico.vercel.app/",
     repo: "https://github.com/leonardomarchioro/projetocapstone_bico.com",
     sobre: `Nossa aplicação tem como objetivo principal ligar um trabalhador 
-            autonomo prestador de serviços com aquela pessoa que precisa de um serviço. 
+            autônomo prestador de serviços com aquela pessoa que precisa de um serviço. 
             Podendo criar um histórico de serviços prestados/tomados, e através de avaliações, 
-            cria-se um lugar onde se pode avaliar de forma pública os usuários, para que assim haja confiança 
+            cria-se um lugar onde se pode avaliar de forma pública os usuários, para que assim tenha mais confiança 
             na hora de chamar alguém para realizar uma simples 
             tarefa que não se tem tempo para fazer na correria do dia a dia.`,
     techs: [
@@ -34,7 +34,7 @@ export const projects = [
     sobre: `Backend dá bico.com, backend com cadastro de usuários, criação de requisições de serviços para os usuários 
             clientes com a role 'client', um usuário com a role 'supplier' pode se candidatar para o serviço e assim prestar o serviço
             para o cliente e receber uma review do serviço prestado. `,
-    techs: ["TypeScript", "NodeJS", "Docker", "Prisma", "Jest"],
+    techs: ["TypeScript", "NodeJS", "Docker", "Prisma", "Jest", "PostgreSQL"],
   },
   {
     name: "KenzieHub",
@@ -42,7 +42,7 @@ export const projects = [
     link: "https://react-entrega-s2-kenzie-hub-leonardomarchioro.vercel.app/",
     repo: "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s2-kenzie-hub-leonardomarchioro",
     sobre: `Aplicação onde os usuário podem cadastrar as tecnologias que estão estudando e também setar um nível
-            de conhecimento da mesma podendo ser entre 'iniciante', 'intermédiario' e 'avançado', além também de
+            de conhecimento da mesma podendo ser entre 'iniciante', 'intermediário' e 'avançado', além também de
             poder editar ou excluir as tecnologias já cadastradas.`,
     techs: ["ReactJs", "Styled-components", "Axios", "Yup"],
   },
